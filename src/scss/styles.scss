@@ -14,7 +14,7 @@ html,body {
 	color: $color--white;
 	font-size: $base--font-size;
 	// center in the viewport.. kinda
-	padding-top: calc( ( 100vh - 800px - #{$base--padding*2} ) / 2 );
+	padding-top: calc( ( 100vh - 800px - #{$base--padding * 2} ) / 2 );
 }
 
 // app layout
@@ -28,36 +28,62 @@ html,body {
 	grid-template-areas: "top-bar top-bar top-bar top-bar" "assorted secondary-bar secondary-bar side-bar" "content-area-2 content-area-1 side-section side-bar";
 }
 
-.top-bar { grid-area: top-bar; }
+.top-bar {
+	grid-area: top-bar; 
+}
 
-.side-bar { grid-area: side-bar; }
+.side-bar {
+	grid-area: side-bar; 
+}
 
-.side-section { grid-area: side-section; }
+.side-section {
+	grid-area: side-section; 
+}
 
 .secondary-bar { 
 	grid-area: secondary-bar; 
 	padding: calc( 51.63px - 9.1px ) 241.44px 0 0; // this is such a hack. I need to redo the grids.
 }
 
-.assorted { grid-area: assorted; }
+.assorted {
+	grid-area: assorted; 
+}
 
-.content-area-1 { grid-area: content-area-1; }
+.content-area-1 {
+	grid-area: content-area-1; 
+}
 
-.content-area-2 { grid-area: content-area-2; }
+.content-area-2 {
+	grid-area: content-area-2; 
+}
 
-.top-bar { grid-area: top-bar; }
+.top-bar {
+	grid-area: top-bar; 
+}
 
-.side-bar { grid-area: side-bar; }
+.side-bar {
+	grid-area: side-bar; 
+}
 
-.side-section { grid-area: side-section; }
+.side-section {
+	grid-area: side-section; 
+}
 
-.secondary-bar { grid-area: secondary-bar; }
+.secondary-bar {
+	grid-area: secondary-bar; 
+}
 
-.assorted { grid-area: assorted; }
+.assorted {
+	grid-area: assorted; 
+}
 
-.content-area-1 { grid-area: content-area-1; }
+.content-area-1 {
+	grid-area: content-area-1; 
+}
 
-.content-area-2 { grid-area: content-area-2; }
+.content-area-2 {
+	grid-area: content-area-2; 
+}
 
 .side-section-grid-container {
 	display: grid;
@@ -66,10 +92,14 @@ html,body {
 	grid-template-areas: "side-section-left-bar side-section-inner" "side-section-footer-bar side-section-footer-bar";
 }
 
-.side-section-footer-bar { grid-area: side-section-footer-bar; }
+.side-section-footer-bar {
+	grid-area: side-section-footer-bar; 
+}
 
-.side-section-inner { grid-area: side-section-inner; }
+.side-section-inner {
+	grid-area: side-section-inner; 
+}
 
-.side-section-left-bar { grid-area: side-section-left-bar; }
-
-// lcars
+.side-section-left-bar {
+	grid-area: side-section-left-bar; 
+}
