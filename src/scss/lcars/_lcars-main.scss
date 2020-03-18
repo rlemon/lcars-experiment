@@ -71,8 +71,9 @@
 	outline: none;
 	border: none;
 	position: relative;
-	&.bar-middle {
-		margin: 0 $bar--button-padding;
+	margin: 0 $bar--button-padding;
+	&:not(:nth-of-type(-1)):not(:nth-of-type(1)) {
+		margin-left: 0;
 	}
 	.lcars-button-text {
 		position: absolute;
@@ -117,8 +118,6 @@
 	flex-direction: column;
 
 	.lcars-button {
-		&.bar-middle {
-			margin: $bar--button-padding 0;
-		}
+		margin: $bar--button-padding 0;
 	}
 }

@@ -13,6 +13,8 @@ html,body {
   background: $color--black;
   color: $color--white;
   font-size: $base--font-size;
+  // center in the viewport.. kinda
+  padding-top: calc( ( 100vh - 800px - #{$base--padding*2} ) / 2 );
 }
 
 // app layout
@@ -20,6 +22,7 @@ html,body {
   display: grid;
   width: 1280px;
   height: 800px;
+  margin: 0 auto; 
   grid-template-columns: 1fr 1.9fr 0.9fr 0.2fr;
   grid-template-rows: 0.6fr 0.2fr 2.2fr;
   grid-template-areas: "top-bar top-bar top-bar top-bar" "assorted secondary-bar secondary-bar side-bar" "content-area-2 content-area-1 side-section side-bar";
@@ -33,7 +36,7 @@ html,body {
 
 .secondary-bar { 
   grid-area: secondary-bar; 
-  padding: calc( 51.63px - 9.1px ) 241.91px 0 0; // this is such a hack. I need to redo the grids.
+  padding: calc( 51.63px - 9.1px ) 241.44px 0 0; // this is such a hack. I need to redo the grids.
 }
 
 .assorted { grid-area: assorted; }
