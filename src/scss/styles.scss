@@ -1,31 +1,31 @@
 @import './lcars/index.scss';
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 800;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Sarabun', sans-serif;
+	font-weight: 800;
 }
 html,body {
-  height: 100%; 
-  width: 100%;
-  background: $color--black;
-  color: $color--white;
-  font-size: $base--font-size;
-  // center in the viewport.. kinda
-  padding-top: calc( ( 100vh - 800px - #{$base--padding*2} ) / 2 );
+	height: 100%; 
+	width: 100%;
+	background: $color--black;
+	color: $color--white;
+	font-size: $base--font-size;
+	// center in the viewport.. kinda
+	padding-top: calc( ( 100vh - 800px - #{$base--padding*2} ) / 2 );
 }
 
 // app layout
 .layout-grid-container {
-  display: grid;
-  width: 1280px;
-  height: 800px;
-  margin: 0 auto; 
-  grid-template-columns: 1fr 1.9fr 0.9fr 0.2fr;
-  grid-template-rows: 0.6fr 0.2fr 2.2fr;
-  grid-template-areas: "top-bar top-bar top-bar top-bar" "assorted secondary-bar secondary-bar side-bar" "content-area-2 content-area-1 side-section side-bar";
+	display: grid;
+	width: 1280px;
+	height: 800px;
+	margin: 0 auto; 
+	grid-template-columns: 1fr 1.9fr 0.9fr 0.2fr;
+	grid-template-rows: 0.6fr 0.2fr 2.2fr;
+	grid-template-areas: "top-bar top-bar top-bar top-bar" "assorted secondary-bar secondary-bar side-bar" "content-area-2 content-area-1 side-section side-bar";
 }
 
 .top-bar { grid-area: top-bar; }
@@ -35,8 +35,8 @@ html,body {
 .side-section { grid-area: side-section; }
 
 .secondary-bar { 
-  grid-area: secondary-bar; 
-  padding: calc( 51.63px - 9.1px ) 241.44px 0 0; // this is such a hack. I need to redo the grids.
+	grid-area: secondary-bar; 
+	padding: calc( 51.63px - 9.1px ) 241.44px 0 0; // this is such a hack. I need to redo the grids.
 }
 
 .assorted { grid-area: assorted; }
@@ -60,10 +60,10 @@ html,body {
 .content-area-2 { grid-area: content-area-2; }
 
 .side-section-grid-container {
-  display: grid;
-  grid-template-columns: 0.2fr 1.2fr;
-  grid-template-rows: 1.2fr 0.02fr;
-  grid-template-areas: "side-section-left-bar side-section-inner" "side-section-footer-bar side-section-footer-bar";
+	display: grid;
+	grid-template-columns: 0.2fr 1.2fr;
+	grid-template-rows: 1.2fr 0.02fr;
+	grid-template-areas: "side-section-left-bar side-section-inner" "side-section-footer-bar side-section-footer-bar";
 }
 
 .side-section-footer-bar { grid-area: side-section-footer-bar; }
