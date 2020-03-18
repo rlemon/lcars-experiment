@@ -37,7 +37,7 @@ const config = {
 					'css-loader',
 					'sass-loader'
 				],
-				sideEffects: false
+				sideEffects: true
 			},
 			{
 				test: /.(png|jpe?g|gif|svg|stl)$/,
