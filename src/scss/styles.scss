@@ -30,7 +30,7 @@ html,body {
 
 .secondary-bar { 
   grid-area: secondary-bar; 
-  padding: calc( 51.63px - 9.1px ) 241.91px 0 0;
+  padding: calc( 51.63px - 9.1px ) 241.91px 0 0; // this is such a hack. I need to redo the grids.
 }
 
 .assorted { grid-area: assorted; }
