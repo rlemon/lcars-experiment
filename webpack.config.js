@@ -1,3 +1,5 @@
+/* eslint-disable */
+// disabling eslint because it bitches about way too much in this file.
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
