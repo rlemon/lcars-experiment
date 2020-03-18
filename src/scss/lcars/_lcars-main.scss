@@ -70,10 +70,46 @@
 	display: inline-block;
 	outline: none;
 	border: none;
-	height: 100%;
-
+	position: relative;
 	&.bar-middle {
 		margin: 0 $bar--button-padding;
+	}
+	.lcars-button-text {
+		position: absolute;
+
+		&.bottom,
+		&.top {
+			left: 0;
+			right: 0;
+		}
+		&.bottom {
+			bottom: $bar--button-inner-padding;
+		}
+		&.top {
+			top: $bar--button-inner-padding;
+		}
+		&.left {
+			left: $bar--button-inner-padding;
+		}
+		&.right {
+			right: $bar--button-inner-padding;
+		}
+		&.top-left {
+			top: $bar--button-inner-padding;
+			left: $bar--button-inner-padding;
+		}
+		&.top-right {
+			top: $bar--button-inner-padding;
+			right: $bar--button-inner-padding;
+		}
+		&.bottom-left {
+			bottom: $bar--button-inner-padding;
+			left: $bar--button-inner-padding;
+		}
+		&.bottom-right {
+			bottom: $bar--button-inner-padding;
+			right: $bar--button-inner-padding;
+		}
 	}
 }
 
@@ -81,8 +117,6 @@
 	flex-direction: column;
 
 	.lcars-button {
-		height: 3rem;
-		width: 100%;
 		&.bar-middle {
 			margin: $bar--button-padding 0;
 		}

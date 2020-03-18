@@ -1,19 +1,35 @@
+// map background colours and set associating pseudo elements who cannot directly inherit
 @each $name,$value in $color_map {
 	.bg-color-#{$name} {
-	  background-color: $value;
-	  &.lcars-bar {
-		background-color: unset;
-		&.top-left-outer-elbow::before,
-		&::before,
-		&::after {
-		  background-color: $value;   
+		background-color: $value;
+		&.lcars-bar {
+			background-color: unset;
+			&.top-left-outer-elbow::before,
+			&::before,
+			&::after {
+				background-color: $value;   
+			}
 		}
-	  }
 	}
-  }
-  
-  @for $w from 1 to $grid--total-steps {
+}
+// width helpers
+@for $w from 1 to $grid--total-steps {
 	.w-#{$w} {
-	  width: #{$w * ( $grid--max-width / $grid--total-steps )};
+		width: #{$w * ( $grid--max-width / $grid--total-steps )};
 	}
-  }
+}
+// height helpers
+@for $h from 1 to $grid--total-steps {
+	.h-#{$h} {
+		height: #{$h * ( $grid--max-height / $grid--total-steps )};
+	}
+}
+// width and height helpers
+@for $w from 1 to $grid--total-steps {
+	@for $h from 1 to $grid--total-steps {
+		.w-#{$w}-h-#{$h} {
+			width: #{$w * ( $grid--max-width / $grid--total-steps )};
+			height: #{$h * ( $grid--max-height / $grid--total-steps )};
+		}
+	}
+}

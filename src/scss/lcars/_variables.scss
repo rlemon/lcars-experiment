@@ -70,7 +70,8 @@ $color--husk: #ba5;
 $color--rust: #b41;
 $color--tamarillo: #821;
 
-$global--padding: 14px;
+$base--padding: 14px;
+$base--font-size: 16px;
 
 // lcars rounding 
 $rounding--xlarge: 45px;
@@ -80,8 +81,8 @@ $rounding--small: 18px;
 $rounding--xsmall: 9px;
 
 // the padding around buttons in a lcars-bar
-$bar--button-padding: $global--padding / 2;
-
+$bar--button-padding: $base--padding / 2;
+$bar--button-inner-padding: $base--padding / 2;
 // grid stuff
 // also general page sizing stuff.
 // lcars might work okay as a fluid design 
@@ -89,4 +90,4 @@ $bar--button-padding: $global--padding / 2;
 $grid--total-steps: 24;
 $grid--max-width: 1280px;
 $grid--max-height: 800px;
-$grid--page-padding: $global--padding;
+$grid--page-padding: $base--padding;

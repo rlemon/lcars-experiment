@@ -4,12 +4,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
 }
 html,body {
   height: 100%; 
   width: 100%;
   background: $color--black;
   color: $color--white;
+  font-size: $base--font-size;
 }
 
 // app layout
