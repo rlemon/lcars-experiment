@@ -1,0 +1,83 @@
+.lcars-container {
+	padding: 0.8rem;
+}
+
+.lcars-bar {
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+	&::before,
+	&::after {
+		content: '';
+		height: 100%;
+		width: 100%;
+		flex: 1;
+	}
+
+	&.top-right-inner-elbow {
+		&::after {
+			border-top-right-radius: ($global--border-radius * 5);
+		}
+	}
+
+	&.top-left-outer-elbow,
+	&.top-right-outer-elbow {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			height: ($global--border-radius * 3);
+			width: ($global--border-radius * 3);
+			top: 0;
+			left: -($global--border-radius * 3)+0.5;
+			clip-path: url(#cp--top-left-outer-elbow);
+		}
+	}
+
+	&.top-right-outer-elbow {
+		position: relative;
+
+		&::before {
+			transform: scaleX(-1);
+			left: unset;
+			right: -($global--border-radius * 3)-0.5;
+		}
+	}
+
+	&.end-left {
+		&::before {
+			border-top-left-radius: $global--border-radius * 2;
+			border-bottom-left-radius: $global--border-radius * 2;
+		}
+	}
+
+	&.end-right {
+		&::after {
+			border-top-right-radius: $global--border-radius * 2;
+			border-bottom-right-radius: $global--border-radius * 2;
+		}
+	}
+}
+
+.lcars-button {
+	display: inline-block;
+	outline: none;
+	border: none;
+	height: 100%;
+
+	&.bar-middle {
+		// this is actually calling out where in the bar the button is so I can add margins accordingly.
+		margin: 0 $bar--button-padding;
+	}
+}
+
+.lcars-bar.vertical {
+	flex-direction: column;
+
+	.lcars-button {
+		height: 3rem;
+		width: 100%;
+	}
+}

@@ -1,0 +1,86 @@
+// colors 
+
+// color map for actual use 
+$color_map: ("gray": #1e2b45,
+"white": #fff,
+"black": #000,
+"pale-canary": #ff9,
+"golden-tanoi": #fc6,
+"neon-carrot": #f93,
+"eggplant": #646,
+"lilac": #c9c,
+"anakiwa": #9cf,
+"mariner": #36c,
+"bahama-blue": #069,
+"blue-bell": #99c,
+"melrose": #99f,
+"hopbush": #c69,
+"chestnut-rose": #c66,
+"orange-peel": #f96,
+"atomic-tangerine": #f90,
+"danub": #68c,
+"indigo": #45b,
+"lavender-purple": #97a,
+"cosmic": #746,
+"red-damask": #d64,
+"medium-carmine": #a53,
+"bourbon": #b62,
+"sandy-brown": #e95,
+"periwinkle": #cdf,
+"dodger-blue": #59f,
+"dodger-blue-alt": #36f,
+"blue": #01e,
+"navy-blue": #008,
+"husk": #ba5,
+"rust": #b41,
+"tamarillo": #821);
+
+// idk why these are here. testing?
+$color--gray: #1e2b45;
+$color--white: #fff;
+$color--black: #000;
+$color--pale-canary: #ff9;
+$color--golden-tanoi: #fc6;
+$color--neon-carrot: #f93;
+$color--eggplant: #646;
+$color--lilac: #c9c;
+$color--anakiwa: #9cf;
+$color--mariner: #36c;
+$color--bahama-blue: #069;
+$color--blue-bell: #99c;
+$color--melrose: #99f;
+$color--hopbush: #c69;
+$color--chestnut-rose: #c66;
+$color--orange-peel: #f96;
+$color--atomic-tangerine: #f90;
+$color--danub: #68c;
+$color--indigo: #45b;
+$color--lavender-purple: #97a;
+$color--cosmic: #746;
+$color--red-damask: #d64;
+$color--medium-carmine: #a53;
+$color--bourbon: #b62;
+$color--sandy-brown: #e95;
+$color--periwinkle: #cdf;
+$color--dodger-blue: #59f;
+$color--dodger-blue-alt: #36f;
+$color--blue: #01e;
+$color--navy-blue: #008;
+$color--husk: #ba5;
+$color--rust: #b41;
+$color--tamarillo: #821;
+
+// globals? idk, generic shit that will be applied  to a bunch of stuff. I will continue to make these more specific.
+$global--border-radius: 9px;
+$global--padding: 14px;
+
+// the padding around buttons in a lcars-bar
+$bar--button-padding: $global--padding / 2;
+
+// grid stuff
+// also general page sizing stuff.
+// lcars might work okay as a fluid design 
+// but I'm pinning everything.
+$grid--total-steps: 24;
+$grid--max-width: 1280px;
+$grid--max-height: 800px;

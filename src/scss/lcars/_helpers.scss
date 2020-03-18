@@ -1,0 +1,19 @@
+@each $name,$value in $color_map {
+	.bg-color-#{$name} {
+	  background-color: $value;
+	  &.lcars-bar {
+		background-color: unset;
+		&.top-left-outer-elbow::before,
+		&::before,
+		&::after {
+		  background-color: $value;   
+		}
+	  }
+	}
+  }
+  
+  @for $w from 1 to $grid--total-steps {
+	.w-#{$w} {
+	  width: #{$w * ( $grid--max-width / $grid--total-steps )};
+	}
+  }

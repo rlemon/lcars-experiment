@@ -1,0 +1,69 @@
+@import './lcars/index.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%; 
+  width: 100%;
+  background: $color--black;
+  color: $color--white;
+}
+
+// app layout
+.layout-grid-container {
+  display: grid;
+  width: 1280px;
+  height: 800px;
+  grid-template-columns: 1fr 1.9fr 0.9fr 0.2fr;
+  grid-template-rows: 0.6fr 0.2fr 2.2fr;
+  grid-template-areas: "top-bar top-bar top-bar top-bar" "assorted secondary-bar secondary-bar side-bar" "content-area-2 content-area-1 side-section side-bar";
+}
+
+.top-bar { grid-area: top-bar; }
+
+.side-bar { grid-area: side-bar; }
+
+.side-section { grid-area: side-section; }
+
+.secondary-bar { 
+  grid-area: secondary-bar; 
+  padding: calc( 51.63px - 9.1px ) 241.91px 0 0;
+}
+
+.assorted { grid-area: assorted; }
+
+.content-area-1 { grid-area: content-area-1; }
+
+.content-area-2 { grid-area: content-area-2; }
+
+.top-bar { grid-area: top-bar; }
+
+.side-bar { grid-area: side-bar; }
+
+.side-section { grid-area: side-section; }
+
+.secondary-bar { grid-area: secondary-bar; }
+
+.assorted { grid-area: assorted; }
+
+.content-area-1 { grid-area: content-area-1; }
+
+.content-area-2 { grid-area: content-area-2; }
+
+.side-section-grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 1.2fr;
+  grid-template-rows: 1.2fr 0.02fr;
+  grid-template-areas: "side-section-left-bar side-section-inner" "side-section-footer-bar side-section-footer-bar";
+}
+
+.side-section-footer-bar { grid-area: side-section-footer-bar; }
+
+.side-section-inner { grid-area: side-section-inner; }
+
+.side-section-left-bar { grid-area: side-section-left-bar; }
+
+// lcars
